@@ -9,12 +9,12 @@ interface HomePageProps{
 
 class HomePage extends Component<HomePageProps,HomePageStates> {
     
-    constructor(props : HomePageProps,state : HomePageStates){
+    constructor(props : HomePageProps){
         super(props)
        this.state = {
-           size : ''
+           size : window.innerWidth.toString()
        }
-       console.log('constructor called')
+       //console.log('constructor called')
 
        
        this.resize = this.resize.bind(this)
@@ -27,15 +27,15 @@ class HomePage extends Component<HomePageProps,HomePageStates> {
         })
     } 
     componentDidUpdate(){
-        console.log('componentDidUpdate called')
+        //console.log('componentDidUpdate called')
     }
     componentDidMount(){
-        console.log('componentDidMount called')
+        //console.log('componentDidMount called')
         window.addEventListener('resize',this.resize)
     }
 
     componentWillUnmount() {
-       console.log('componentWillUnmount called')
+       //console.log('componentWillUnmount called')
     }
 
     render() {
