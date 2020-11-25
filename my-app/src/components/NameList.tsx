@@ -1,5 +1,5 @@
 import React from 'react'
-import Persons from './Person'
+//import Persons from './Person'
 
 
 function  NameList(){
@@ -10,13 +10,15 @@ function  NameList(){
         
         ]
     return(
-        <div>
+        <React.Fragment>
             {
-                names.map((person,key)=>
-                <Persons key={key} person={person}  />
-                )
+                names.map((name,i) => <React.Fragment key={i}>
+                <h1>{name.name}</h1>
+                <h4>{name.age}</h4>
+                <h4>{name.skill}</h4>
+                </React.Fragment>)
             }
-        </div>
-    )
+        </React.Fragment>
+        );
 }
 export default NameList

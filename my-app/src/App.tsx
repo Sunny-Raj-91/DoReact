@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Form from './components/Form';
+//import Form from './components/Form';
 // import Hello from './components/Hello';
 // import HomePage from './components/HomePage'
-// import NameList from './components/NameList';
+import NameList from './components/NameList';
+import ParentRef from './components/ParentRef';
 
 function App() {
 
@@ -15,10 +16,11 @@ function App() {
 // }
   return (
     <div className="App">
-      <Form/>
+      {/* <Form/> */}
       {/* <Hello name='Sunny' click = {clickMe} fn = {helloWorld}/> */}
       {/* <HomePage/> */}
-      {/* <NameList/> */}
+      <NameList/>
+      <ParentRef/>
     </div>
   );
 }

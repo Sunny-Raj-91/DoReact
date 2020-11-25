@@ -36,7 +36,9 @@ class HomePage extends Component<HomePageProps,HomePageStates> {
 
     componentWillUnmount() {
        //console.log('componentWillUnmount called')
+       window.removeEventListener('resize',this.resize);
     }
+    
 
     render() {
     console.log('rendered')
