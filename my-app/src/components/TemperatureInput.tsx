@@ -12,6 +12,7 @@ const TemperatureInput = function(props : TempInputProps){
             <h1>Temperature in {props.scale}</h1>
             <input type='text' value = {props.temp} onChange = {(e) => props.handleTempChange(e,props.scale)}/>
         </div>
+        
     )
 }
 
