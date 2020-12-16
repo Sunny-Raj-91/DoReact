@@ -1,12 +1,13 @@
 
 import React from 'react';
 import './App.css';
+import FetchComments from './components/FetchComments';
 //import ClickCounter from './components/ClickCounter';
 //import ClickCounterTwo from './components/ClickCounterTwo';
 //import HoverCounter from './components/HoverCounter';
 //import HoverCountertTow from './components/HoverCountertTwo';
 //import CounterRenderProp from './CounterRenderProp';
-import UseEffectHook from './components/useEffectHookDemo'
+//import UseEffectHook from './components/useEffectHookDemo'
 //import TemperatureCalculator from './components/TemperatureCalculator';
 //import Form from './components/Form';
 // import Hello from './components/Hello';
@@ -36,7 +37,8 @@ function App() {
       {/* <TemperatureCalculator/> */}
       {/* <CounterRenderProp render =  { (count,increment,stopIncrement) => <HoverCountertTow count = {count} increment = {increment} stopIncrement = {stopIncrement}/>} /> */}
       {/* <CounterRenderProp render =  { (count,increment,stopIncrement) => <ClickCounterTwo count ={count} increment = {increment} stopIncrement = {stopIncrement} />} /> */}
-      <UseEffectHook name="fluffy"/>
+      {/* <UseEffectHook name="fluffy"/> */}
+      <FetchComments/>
     </div>
   );
 }
